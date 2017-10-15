@@ -1,0 +1,89 @@
+======================================
+           REHUNT Examples
+======================================
+
+Author: Yu-Huei Cheng <yuhuei.cheng@gmail.com>
+Date: 2016/10/14
+Update: 2017/09/30
+
+These are the examples of REHUNT.
+Users can refer to and modify the examples for their preferred applications.
+
+All academic researchers are encouraged to use it to apply to their studies or integrate it into their systems.
+Non-academic users or commercial needs are also welcome to use it. For further information or additional applications welcome to contact with the author Yu-Huei Cheng <yuhuei.cheng@gmail.com>.
+
+---------
+Example 1
+---------
+Universal judgement of whether a variation of a sequence can be recognized by restriction enzymes.
+The input variations may include two variations, three variations, or four variations.
+
+---------
+Example 2
+---------
+Search for specific restriction enzymes.
+For example, the sequence "ACGG[A/C]TTTTTT" can be recognized by restriction enzyme TspGWI (ACGGA) for variation A.
+The sequence "ACGG[A/C]TTTTTTACGGATTT" can be recognized by restriction enzyme TspGWI (ACGGA) for variation A, but it will be excluded because of the repeat of the sequence "ACGGA".
+REHUNT identifies specific and available restriction enzymes, thus, the reappearing restriction enzyme TspGWI (ACGGA) will be excluded.
+
+---------
+Example 3
+---------
+Identify restriction enzymes for a sequence and complementary sequence with multi-variation (Please use Example 3_1, Example 3_2, and Example 3_3).
+The sequence "TTAGCATCAGCATTTGCTGC[multi-variation]
+ATCGCTAACGGTGGATCTAC" with multi-variation that can be recognized by restriction enzymes. Its complementary sequence can also be recognized by restriction enzymes. These restriction enzymes are easy identified by REHUNT.
+Example 3_1, Example 3_2, and Example 3_3 are provided for two variations, three variations, and four variations, respectively.
+
+
+---------
+Example 3_1
+---------
+Identify restriction enzymes for a sequence and complementary sequence with two variations.
+The sequence "TTAGCATCAGCATTTGCTGC[A/G]ATCGCTAACGGTGGATCTAC" with two variations A and G that can be recognized by restriction enzymes.
+Its complementary sequence is also can be recognized by restriction enzymes.
+These restriction enzymes are easy found out by REHUNT.
+
+---------
+Example 3_2
+---------
+Identify restriction enzymes for a sequence and complementary sequence with three variations.
+The sequence "TTAGCATCAGCATTTGCTGC[A/G/C]ATCGCTAACGGTGGATCTAC" with three variations A, G and C that can be recognized by restriction enzymes.
+Its complementary sequence is also can be recognized by restriction enzymes.
+These restriction enzymes are easy found out by REHUNT.
+
+---------
+Example 3_3
+---------
+Identify restriction enzymes for a sequence and complementary sequence with four variations.
+The sequence "TTAGCATCAGCATTTGCTGC[A/G/C/T]ATCGCTAACGGTGGATCTAC" with four variations A, G, C and T that can be recognized by restriction enzymes.
+Its complementary sequence is also can be recognized by restriction enzymes.
+These restriction enzymes are easy found out by REHUNT.
+
+---------
+Example 4
+---------
+Only restriction enzymes with eliminated IUPAC format are evaluated.
+The sequence "AATTTCTGG[A/G]CCCTAACGGT" can only be recognized by restriction enzyme BspGI (CTGGAC) with eliminated IUPAC format for variation A.
+The function setIUPACenzyme(false) in "JudgeRFLP" class is used.
+
+---------
+Example 5
+---------
+All restriction enzymes including IUPAC format are evaluated.
+The sequence "AATTTCTGG[A/G]CCCTAACGGT" can be recognized by many restriction enzymes including IUPAC format for variation A.
+The function setIUPACenzyme(true) in "JudgeRFLP" class is used.
+
+---------
+Example 6
+---------
+High throughput analysis.
+The multiple sequences can be analyzed by "JudgeRFLPBatchThread" class.
+The function is useful for high throughput analysis.
+
+
+
+
+
+
+
+

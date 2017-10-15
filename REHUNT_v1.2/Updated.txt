@@ -1,0 +1,94 @@
+======================================
+         REHUNT Updated Log
+======================================
+2017/10/15 by Yu-Huei Cheng:
+REHUNT v1.2 is released.
+--------------------
+2017/10/14 by Yu-Huei Cheng:
+1. Update examples and improve codes to relase REHUNT v1.2.
+2. The document for REHUNT v1.2 is now available.
+3. Update REBASE to version 709 with the latest update on Aug 28 2017.
+--------------------
+2017/02/04 by Yu-Huei Cheng:
+Update REBASE to version 702 with the latest update on Jan 29 2017.
+--------------------
+2016/10/06 by Yu-Huei Cheng:
+1. The REHUNT has been successfully applied to natural PCR-RFLP primer design for SNP genotyping. The publication is available at: http://ieeexplore.ieee.org/document/7530862/. 
+--------------------
+2016/10/05 by Yu-Huei Cheng:
+1. Update examples and improve codes to relase REHUNT v1.1.
+2. The document for REHUNT v1.1 is now available.
+--------------------
+2016/09/28 by Yu-Huei Cheng:
+Update REBASE to version 609 with the latest update on Aug 29 2016.
+--------------------
+2014/04/24 by Yu-Huei Cheng:
+Update REBASE to version 404 with the latest update on Mar 31 2014.
+--------------------
+2014/03/01 by Yu-Huei Cheng:
+Update REBASE to version 402 with the latest update on Jan 30 2014.
+--------------------
+2013/07/06 by Yu-Huei Cheng:
+Update REBASE to version 307 with the latest update on Jun 30 2013.
+--------------------
+2012/07/29 by Yu-Huei Cheng:
+Construct the REHUNT version 1.0 API documents.
+--------------------
+2012/07/28 by Yu-Huei Cheng:
+Construct the project in Google code for releasing REHUNT version 1.0.
+--------------------
+2012/07/27 by Yu-Huei Cheng:
+1. Modified the bugs for the judgement of specific restriction enzymes, and remove setSpecificEnzyme(boolean isSpecificEnzyme) method in RFLP.java.
+2. Add regionMatchCount(String seq, String subSeq) method in RFLPprocess.java for counting the repeat number of subSeq in seq.
+3. Make the examples for accessible.
+--------------------
+2012/07/26 by Yu-Huei Cheng:
+1. Clear the content of enzymeNameList and cutEnzymesList before the isCanCut and isCanCut_dNTPs methods in JudgeRFLP.java are performed.
+2. Modified setSpecificityEnzyme(ifSpecificityEnzyme) method as setSpecificityEnzyme(isSpecificEnzyme) through all source documents.
+--------------------
+2012/07/25 by Yu-Huei Cheng:
+Named the package as REHUNT, and modified the all annotations for the source codes.
+--------------------
+2011/11/09 by Yu-Huei Cheng:
+1. Delete REBASE_RelatedSeq.java and merge its methods to REBASE.java.
+2. Add and modify annotations for the source codes of REHUNT.
+--------------------
+2010/05/07 by Yu-Huei Cheng:
+1. Take off the function of flanking 20 bp to analyze RFLP for identifing the specific restriction enzymes.
+2. The filed ifSpecificityEnzyme is problematic and ifSpecificityEnzyme must be set to false for correctness in current version.
+--------------------
+2009/09/03 by Yu-Huei Cheng:
+Reserve getPosMultiSeq_dNTPs method in SeqProcess.java.
+--------------------
+2009/08/24 by Yu-Huei Cheng:
+1. Update isCanCut and isCanCut_dNTPs methods in JudgeRFLP.java use flanking 20 bp to analyze RFLP for the performance.
+2. Modified getPosMultiSeq_dNTPs method in SeqProcess.java.
+--------------------
+2009/08/06 by Yu-Huei Cheng:
+1. Set the default isIUPACenzyme as true and isSpecificityEnzyme as false in JudgeRFLPBatchThread.java.
+2. The variation sequence uses flanking 20 bp to analyze RFLP.
+--------------------
+2009/06/30 by Yu-Huei Cheng:
+Update REBASE to version 906.
+--------------------
+2009/02/03 by Yu-Huei Cheng:
+Update REBASE to version 902.
+--------------------
+2009/02/02 by Yu-Huei Cheng:
+1. Add haveSpecificityMatches method to RFLPprocess.java for judging the specificity of restriction enzymes.
+2. Add the field ifSpecificityEnzyme to RFLP.java, JudgeRFLP.java and Example.java to applied to the haveSpecificityMatches method.
+3. Add the functions for setting IUPAC and Specific restriction enzymes in JudgeRFLP.java.
+--------------------
+2008/07/10 by Yu-Huei Cheng:
+Add JudgeRFLPBatchThread.java to analyze multiple sequences for RFLP.
+
+
+
+
+
+
+
+
+
+
+
